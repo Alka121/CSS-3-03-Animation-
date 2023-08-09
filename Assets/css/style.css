@@ -1,0 +1,76 @@
+/*p1.html */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height:300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    /*color:#fff;*/
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000;
+}
+.animation1{
+    background: black;
+    /*animation: bepractical;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;*/
+    animation: bepractical 10s infinite;
+}
+@keyframes bepractical{
+    from{background: #fc4a1a;}
+    to{background: #0575e6;}
+}
+/*p2.html */
+.animation2{
+    background:url(../images/pexels-pok-rie-5795695.jpg) no-repeat center;
+    background-size: 100%;
+    animation: animation_image 10s infinite;
+}
+@keyframes animation_image{
+    from{background: url(../images/pexels-隔壁光头老王-wangming\'photo-354939.jpg) no-repeat top;color: red;}
+    to{background: url(../images/pexels-stephan-seeber-1261731.jpg) no-repeat bottom; color:green;}
+}
+/*p3.css */
+.animation3{
+    background: #fc466B;
+    padding: 20px;
+    margin:30px;
+    border-radius: 5px;
+    color:#fff;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3{
+    0%{
+        top:0px;
+        left:0px;
+        background: #fc466b;
+        color:#000;
+    }
+    25%{
+        top:0px;
+        left:600px;
+        background: cadetblue;
+        color:red;
+    }
+    50%{
+        top:400px;
+        left:600px;
+        background: teal;
+        color:gray;
+    }
+    75%{
+        top:400px;
+        left:0px;
+        background: yellow;
+        color:green;
+    }
+    100%{
+        top:0px;
+        left:0px;
+        background: red;
+        color:blue;
+    }
+}
